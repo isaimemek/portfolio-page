@@ -1,12 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import { ThemeProvider } from "./components/context/ThemeContext";
+import { Background } from "./components";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <Background>
+        <App />
+      </Background>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

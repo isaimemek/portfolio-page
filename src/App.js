@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="scroller bg-gradient-to-r from-gray-50 to-indigo-50">
+    <div className="scroller">
       <Header />
       <Home />
       <About />

@@ -3,9 +3,8 @@ import { BiArrowToBottom } from "react-icons/bi";
 
 function NavButton({ Page }) {
   return (
-    <div className="hidden 2xl:flex text-blue-700 font-semibold py-1 hover:border border-transparent rounded hover:cursor-pointer">
+    <button className="hidden 2xl:flex dark:hidden text-blue-700 font-semibold py-1 hover:border border-transparent rounded hover:cursor-pointer">
       <Link
-        className=""
         activeClass="active"
         to={Page}
         spy={true}
@@ -20,7 +19,7 @@ function NavButton({ Page }) {
           </div>
         </div>
       </Link>
-    </div>
+    </button>
   );
 }
 

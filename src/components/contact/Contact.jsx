@@ -18,7 +18,10 @@ function Contact() {
   };
 
   return (
-    <div id="Contact" className="max-h-fit bg-slate-700 text-slate-200">
+    <div
+      id="Contact"
+      className="max-h-fit bg-slate-700 text-slate-200 dark:bg-zinc-900 "
+    >
       <div className="md:flex pt-10 md:pt-18 mx-4 md:mx-16 justify-between ">
         <div className="ml-32">
           <div className="flex">
@@ -46,7 +49,7 @@ function Contact() {
             </a>
           </div>
         </div>
-        <div className="mt-28 bg-slate-100 text-blue-700 rounded hover:cursor-pointer">
+        <div className="mt-28 bg-slate-100 text-blue-700 dark:bg-stone-200 dark:font-medium rounded hover:cursor-pointer">
           <Link to="#" onClick={scroll.scrollToTop}>
             <div className="flex items-center justify-center p-2">
               <BiArrowToTop className="mr-2" />
